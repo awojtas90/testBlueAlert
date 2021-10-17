@@ -1,0 +1,16 @@
+  Scenario Outline: Fill the form
+    Given Page https://app.bluealert.pl/ba/form/formularz-testowy opened in browser
+    When User fill firstName
+    And fill lastName
+    And fill email
+    And fill phoneNumber
+    And fill peselNumber
+    And fill idNumber
+    And fill dateOfBirth
+    And submit nextButton
+    Then user see agreePage
+    And Close browser
+
+    Examples:
+      | firstName | lastName | email      | phoneNumber| peselNumber | idNumber  |dateOfBirth |
+      | Jerzy     | Nowak    | jurek@o2.pl| 789567487  |00082519942  | 678489789 |1997-09-30|
