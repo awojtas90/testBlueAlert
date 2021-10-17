@@ -39,7 +39,7 @@ public class testBlueAlert {
             driver.findElement(By.xpath(consent1)).click();
             driver.findElement(By.xpath(consent2)).click();
             driver.findElement(By.id(submitButton2)).click();
-            driver.close();
+//            driver.close();
         }
     }
 
