@@ -1,18 +1,22 @@
-Feature: Fill data in the form
-
-  Scenario Outline: Fill the form
-Given Page https://app.bluealert.pl/ba/form/formularz-testowy opened in browser
-When User fill firstName <paramFirstName>
-And fill lastName <paramLastName>
-And fill email <paramEmail>
-And fill phoneNumber <paramPhoneNumber>
-And fill peselNumber<paramPeselNumber>
-And fill idNumber <paramIdNumber>
-And fill dateOfBirth <paramDateOfBirth>
-And submit nextButton
-Then user see agreePage
-And close browser
+Feature: Registration
+Scenario Outline: Registration of User
+Given Page https://flexi.pl opened in browser
+When  click on registration button
+And accept the statue
+Then click on register button
+And fill email
+And fill email2
+And fill password
+And fill password2
+And fill first name <paramFirstName>
+And fill last name <paramLastName>
+And fill phone <paramPhone>
+And fill city <paramCity>
+And accept statements
+And submit registration
+Then alert of registration confirmation is viewed
+  And close browser
 
 Examples:
-|paramFirstName|paramLastName|paramEmail | paramPhoneNumber|paramPeselNumber| paramIdNumber |paramDateOfBirth |
-|Jerzy         |Nowak        |jurek@o2.pl| 789567487       |00040807243     | ADQ382529     |1997-09-30       |
+|paramFirstName|paramLastName|paramPhone|paramCity|
+|Jerzy         |Nowak        |768498767 |Warszawa |

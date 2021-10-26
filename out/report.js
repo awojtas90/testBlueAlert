@@ -1,316 +1,368 @@
 $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/Cucumber/Features/test-ba.feature");
 formatter.feature({
   "line": 1,
-  "name": "Fill data in the form",
+  "name": "Registration",
   "description": "",
-  "id": "fill-data-in-the-form",
+  "id": "registration",
   "keyword": "Feature"
 });
 formatter.scenarioOutline({
-  "line": 3,
-  "name": "Fill the form",
+  "line": 2,
+  "name": "Registration of User",
   "description": "",
-  "id": "fill-data-in-the-form;fill-the-form",
+  "id": "registration;registration-of-user",
   "type": "scenario_outline",
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 4,
-  "name": "Page https://app.bluealert.pl/ba/form/formularz-testowy opened in browser",
+  "line": 3,
+  "name": "Page https://flexi.pl opened in browser",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 5,
-  "name": "User fill firstName \u003cparamFirstName\u003e",
+  "line": 4,
+  "name": "click on registration button",
   "keyword": "When "
 });
 formatter.step({
-  "line": 6,
-  "name": "fill lastName \u003cparamLastName\u003e",
+  "line": 5,
+  "name": "accept the statue",
   "keyword": "And "
 });
 formatter.step({
+  "line": 6,
+  "name": "click on register button",
+  "keyword": "Then "
+});
+formatter.step({
   "line": 7,
-  "name": "fill email \u003cparamEmail\u003e",
+  "name": "fill email",
   "keyword": "And "
 });
 formatter.step({
   "line": 8,
-  "name": "fill phoneNumber \u003cparamPhoneNumber\u003e",
+  "name": "fill email2",
   "keyword": "And "
 });
 formatter.step({
   "line": 9,
-  "name": "fill peselNumber\u003cparamPeselNumber\u003e",
+  "name": "fill password",
   "keyword": "And "
 });
 formatter.step({
   "line": 10,
-  "name": "fill idNumber \u003cparamIdNumber\u003e",
+  "name": "fill password2",
   "keyword": "And "
 });
 formatter.step({
   "line": 11,
-  "name": "fill dateOfBirth \u003cparamDateOfBirth\u003e",
+  "name": "fill first name \u003cparamFirstName\u003e",
   "keyword": "And "
 });
 formatter.step({
   "line": 12,
-  "name": "submit nextButton",
+  "name": "fill last name \u003cparamLastName\u003e",
   "keyword": "And "
 });
 formatter.step({
   "line": 13,
-  "name": "user see agreePage",
-  "keyword": "Then "
+  "name": "fill phone \u003cparamPhone\u003e",
+  "keyword": "And "
 });
 formatter.step({
   "line": 14,
+  "name": "fill city \u003cparamCity\u003e",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 15,
+  "name": "accept statements",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 16,
+  "name": "submit registration",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 17,
+  "name": "alert of registration confirmation is viewed",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 18,
   "name": "close browser",
   "keyword": "And "
 });
 formatter.examples({
-  "line": 16,
+  "line": 20,
   "name": "",
   "description": "",
-  "id": "fill-data-in-the-form;fill-the-form;",
+  "id": "registration;registration-of-user;",
   "rows": [
     {
       "cells": [
         "paramFirstName",
         "paramLastName",
-        "paramEmail",
-        "paramPhoneNumber",
-        "paramPeselNumber",
-        "paramIdNumber",
-        "paramDateOfBirth"
+        "paramPhone",
+        "paramCity"
       ],
-      "line": 17,
-      "id": "fill-data-in-the-form;fill-the-form;;1"
+      "line": 21,
+      "id": "registration;registration-of-user;;1"
     },
     {
       "cells": [
         "Jerzy",
         "Nowak",
-        "jurek@o2.pl",
-        "789567487",
-        "00040807243",
-        "ADQ382529",
-        "1997-09-30"
+        "768498767",
+        "Warszawa"
       ],
-      "line": 18,
-      "id": "fill-data-in-the-form;fill-the-form;;2"
+      "line": 22,
+      "id": "registration;registration-of-user;;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.scenario({
-  "line": 18,
-  "name": "Fill the form",
+  "line": 22,
+  "name": "Registration of User",
   "description": "",
-  "id": "fill-data-in-the-form;fill-the-form;;2",
+  "id": "registration;registration-of-user;;2",
   "type": "scenario",
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 4,
-  "name": "Page https://app.bluealert.pl/ba/form/formularz-testowy opened in browser",
+  "line": 3,
+  "name": "Page https://flexi.pl opened in browser",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 5,
-  "name": "User fill firstName Jerzy",
-  "matchedColumns": [
-    0
-  ],
+  "line": 4,
+  "name": "click on registration button",
   "keyword": "When "
 });
 formatter.step({
+  "line": 5,
+  "name": "accept the statue",
+  "keyword": "And "
+});
+formatter.step({
   "line": 6,
-  "name": "fill lastName Nowak",
+  "name": "click on register button",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 7,
+  "name": "fill email",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 8,
+  "name": "fill email2",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 9,
+  "name": "fill password",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 10,
+  "name": "fill password2",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 11,
+  "name": "fill first name Jerzy",
+  "matchedColumns": [
+    0
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 12,
+  "name": "fill last name Nowak",
   "matchedColumns": [
     1
   ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 7,
-  "name": "fill email jurek@o2.pl",
+  "line": 13,
+  "name": "fill phone 768498767",
   "matchedColumns": [
     2
   ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 8,
-  "name": "fill phoneNumber 789567487",
+  "line": 14,
+  "name": "fill city Warszawa",
   "matchedColumns": [
     3
   ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 9,
-  "name": "fill peselNumber00040807243",
-  "matchedColumns": [
-    4
-  ],
+  "line": 15,
+  "name": "accept statements",
   "keyword": "And "
 });
 formatter.step({
-  "line": 10,
-  "name": "fill idNumber ADQ382529",
-  "matchedColumns": [
-    5
-  ],
+  "line": 16,
+  "name": "submit registration",
   "keyword": "And "
 });
 formatter.step({
-  "line": 11,
-  "name": "fill dateOfBirth 1997-09-30",
-  "matchedColumns": [
-    6
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 12,
-  "name": "submit nextButton",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 13,
-  "name": "user see agreePage",
+  "line": 17,
+  "name": "alert of registration confirmation is viewed",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 14,
+  "line": 18,
   "name": "close browser",
   "keyword": "And "
 });
 formatter.match({
   "arguments": [
     {
-      "val": "https://app.bluealert.pl/ba/form/formularz-testowy",
+      "val": "https://flexi.pl",
       "offset": 5
     }
   ],
   "location": "userDataSteps.openPageInBrowser(String)"
 });
 formatter.result({
-  "duration": 4981979400,
+  "duration": 9102900000,
+  "status": "passed"
+});
+formatter.match({
+  "location": "userDataSteps.clickRegisterButton()"
+});
+formatter.result({
+  "duration": 236174200,
+  "status": "passed"
+});
+formatter.match({
+  "location": "userDataSteps.clickAcceptButton()"
+});
+formatter.result({
+  "duration": 183069500,
+  "status": "passed"
+});
+formatter.match({
+  "location": "userDataSteps.createAccount()"
+});
+formatter.result({
+  "duration": 826647700,
+  "status": "passed"
+});
+formatter.match({
+  "location": "userDataSteps.fillEmail()"
+});
+formatter.result({
+  "duration": 1115895500,
+  "status": "passed"
+});
+formatter.match({
+  "location": "userDataSteps.fillEmail2()"
+});
+formatter.result({
+  "duration": 474943800,
+  "status": "passed"
+});
+formatter.match({
+  "location": "userDataSteps.fillPassword()"
+});
+formatter.result({
+  "duration": 243646500,
+  "status": "passed"
+});
+formatter.match({
+  "location": "userDataSteps.fillPassword2()"
+});
+formatter.result({
+  "duration": 215104000,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
       "val": " Jerzy",
-      "offset": 19
+      "offset": 15
     }
   ],
-  "location": "userDataSteps.userFillFirstName(String)"
+  "location": "userDataSteps.fillFirstName(String)"
 });
 formatter.result({
-  "duration": 128874000,
+  "duration": 152809500,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
       "val": " Nowak",
-      "offset": 13
+      "offset": 14
     }
   ],
   "location": "userDataSteps.fillLastName(String)"
 });
 formatter.result({
-  "duration": 120445500,
+  "duration": 116540500,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": " jurek@o2.pl",
+      "val": " 768498767",
       "offset": 10
-    }
-  ],
-  "location": "userDataSteps.fillEmail(String)"
-});
-formatter.result({
-  "duration": 109382400,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": " 789567487",
-      "offset": 16
     }
   ],
   "location": "userDataSteps.fillPhone(String)"
 });
 formatter.result({
-  "duration": 122822000,
+  "duration": 172507600,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "00040807243",
-      "offset": 16
+      "val": " Warszawa",
+      "offset": 9
     }
   ],
-  "location": "userDataSteps.fillPeselNumber(String)"
+  "location": "userDataSteps.fillCity(String)"
 });
 formatter.result({
-  "duration": 155022100,
+  "duration": 156639300,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": " ADQ382529",
-      "offset": 13
-    }
-  ],
-  "location": "userDataSteps.fillIdNumber(String)"
+  "location": "userDataSteps.userAcceptStatue()"
 });
 formatter.result({
-  "duration": 135641300,
+  "duration": 83850100,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": " 1997-09-30",
-      "offset": 16
-    }
-  ],
-  "location": "userDataSteps.fillDateOfBirth(String)"
+  "location": "userDataSteps.submitRegistration()"
 });
 formatter.result({
-  "duration": 232967500,
+  "duration": 156752900,
   "status": "passed"
 });
 formatter.match({
-  "location": "userDataSteps.clickOnNextButton()"
+  "location": "userDataSteps.registrationAlert()"
 });
 formatter.result({
-  "duration": 1266018200,
-  "status": "passed"
-});
-formatter.match({
-  "location": "userDataSteps.agreePageIsVisible()"
-});
-formatter.result({
-  "duration": 193075100,
+  "duration": 1584222400,
   "status": "passed"
 });
 formatter.match({
   "location": "userDataSteps.closeBrowser()"
 });
 formatter.result({
-  "duration": 117422100,
+  "duration": 4146540800,
   "status": "passed"
 });
 });
